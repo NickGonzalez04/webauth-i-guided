@@ -52,5 +52,11 @@ server.get('/api/users', (req, res) => {
     .catch(err => res.send(err));
 });
 
-const port = process.env.PORT || 5000;
+
+server.get('/hash', (req, res)=>{
+// need a walk through for it 
+})
+
+
+const port = process.env.PORT || 5002;
 server.listen(port, () => console.log(`\n** Running on port ${port} **\n`));
